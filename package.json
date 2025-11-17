@@ -1,10 +1,14 @@
 {
   "name": "better-auth-mcp",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "bin": {
+    "better-auth-mcp": "./build/index.ts"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && chmod 755 build/index.ts",
+    "dev": "tsx src/index.ts"
   },
   "repository": {
     "type": "git",
